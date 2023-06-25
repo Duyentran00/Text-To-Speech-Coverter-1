@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="https://img.icons8.com/?size=512&id=52495&format=png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <title>Text To Speech Converter - Duyên</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Text To Speech <span>Converter</span></h1>
+        <textarea placeholder="Write the content you want to convert here."></textarea>
+        <div class="controls">
+            <div class="control">
+                <label for="pitch">Pitch:</label>
+                <input type="range" id="pitch" min="0" max="1" step="0.1" value="1">
+                <span class="value" id="pitchValue">1</span>
+            </div>
+            <div class="control">
+                <label for="volume">Volume:</label>
+                <input type="range" id="volume" min="0" max="1" step="0.1" value="1">
+                <span class="value" id="volumeValue">1</span>
+            </div>
+            <div class="control">
+                <label for="rate">Rate:</label>
+                <input type="range" id="rate" min="0.5" max="1" step="0.1" value="1">
+                <span class="value" id="rateValue">1</span>
+            </div>
+        </div>
+        <div class="row">
+            <select class="select"></select>
+            <button> <i class="fa-solid fa-play"></i>Speak</button>
+        </div>
+    </div>
+
+    <script language="javascript" src="./main.js"></script>
+</body>
+
+</html>

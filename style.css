@@ -1,0 +1,121 @@
+* {
+    margin     : 0;
+    padding    : 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing : border-box;
+}
+
+.container {
+    width          : 100%;
+    background     : linear-gradient(45deg, #022af2, #cd65e2);
+    display        : flex;
+    min-height     : 120vh;
+    align-items    : center;
+    justify-content: center;
+    flex-direction : column;
+}
+
+.container h1 {
+    font-size    : 50px;
+    font-weight  : 550;
+    margin-top   : -50px;
+    margin-bottom: 50px;
+    color        : #fff;
+}
+
+.container h1 span {
+    color: #022af2;
+}
+
+textarea {
+    width        : 600px;
+    height       : 250px;
+    background   : #cd65e2;
+    font-size    : 15px;
+    color        : #fff;
+    border       : 0;
+    outline      : 0;
+    padding      : 20px;
+    border-radius: 10px;
+    resize       : none;
+    margin-bottom: 30px;
+}
+
+textarea::placeholder {
+    font-size: 16px;
+    color    : #fff;
+    opacity  : 0.6;
+}
+
+.controls {
+    margin-bottom: 30px;
+    width        : 600px;
+}
+
+.control {
+    margin: 10px 0;
+}
+
+.controls label {
+    color      : #fff;
+    font-size  : 16px;
+    font-weight: bold;
+}
+
+.controls input[type="range"] {
+    width           : calc(100% - 25px);
+    height          : 6px;
+    background-color: #fff;
+    border-radius   : 3px;
+    cursor          : pointer;
+}
+
+.controls .value {
+    color    : #f8f8f8;
+    font-size: 14px;
+}
+
+.row {
+    width      : 600px;
+    display    : flex;
+    align-items: center;
+    gap        : 20px;
+}
+
+button {
+    background   : #022af2;
+    color        : #fff;
+    font-size    : 16px;
+    padding      : 12px 30px;
+    border-radius: 30px;
+    border       : 0;
+    outline      : 0;
+    cursor       : pointer;
+    align-items  : center;
+}
+
+button i {
+    width       : 16px;
+    margin-right: 10px;
+}
+
+
+.select {
+    flex               : 1;
+    color              : #fff;
+    background         : #cd65e2;
+    height             : 50px;
+    width              : 384px;
+    padding            : 0 20px;
+    outline            : 0;
+    border             : 0;
+    border-radius      : 30px;
+    font-style         : 16px;
+    background-image   : url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath fill='%23FFFFFF' d='M5 6L0.5 0H9.5L5 6Z'/%3E%3C/svg%3E");
+    background-position: calc(100% - 20px);
+    background-repeat  : no-repeat;
+    background-size    : 15px;
+    appearance         : none;
+    -moz-appearance    : none;
+    -webkit-appearance : none;
+}
